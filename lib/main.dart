@@ -6,17 +6,40 @@ import 'package:computer_course/screens/onBoarding/StartPage3.dart';
 import 'package:computer_course/screens/onBoarding/StartPage4.dart';
 import 'package:computer_course/screens/onBoarding/StartPage5.dart';
 import 'package:computer_course/screens/onBoarding/StartPage6.dart';
+import 'package:computer_course/screens/splashScreen/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
+
+  bool? isOnBoardingFinished;
+
+  void setInitialStringData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      isOnBoardingFinished = prefs.getBool("isOnBoardingFinished") ?? false;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    setInitialStringData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,8 +48,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
-      initialRoute: HomePage.route,
+      home: (isOnBoardingFinished == null)
+          ? const SplashScreen()
+          : isOnBoardingFinished!
+              ? const HomePage()
+              : const StartPage1(),
       routes: {
         StartPage1.route: (context) => const StartPage1(),
         StartPage2.route: (context) => StartPage2(),
@@ -35,8 +61,7 @@ class MyApp extends StatelessWidget {
         StartPage5.route: (context) => const StartPage5(),
         StartPage6.route: (context) => const StartPage6(),
         HomePage.route: (context) => const HomePage(),
-        ChooseSubTopicScreen.route: (context) =>
-            const ChooseSubTopicScreen(title: "Browse Courses"),
+        ChooseSubTopicScreen.route: (context) => const ChooseSubTopicScreen(),
       },
     );
   }

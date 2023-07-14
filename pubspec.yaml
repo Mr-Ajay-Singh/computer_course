@@ -39,6 +39,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  shared_preferences: ^2.0.12
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -64,10 +65,10 @@ flutter:
     - assets/vayr.gif
     - assets/promotion.png
     - assets/Icons8calculator241.png
-    - assets/Image1.png
-    - assets/Image2.png
-    - assets/Image3.png
-    - assets/Image4.png
+    - assets/image1.png
+    - assets/image2.png
+    - assets/image3.png
+    - assets/image4.png
     - assets/computer_intro.png
   #   - images/a_dot_ham.jpeg
 

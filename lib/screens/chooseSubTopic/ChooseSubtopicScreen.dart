@@ -3,20 +3,29 @@ import 'package:flutter/material.dart';
 
 import 'component/OtherPageAppBar.dart';
 
+class ChooseSubTopicScreenArgs {
+  final String title;
+  final String message;
+
+  ChooseSubTopicScreenArgs(this.title, this.message);
+}
+
 class ChooseSubTopicScreen extends StatelessWidget {
-  const ChooseSubTopicScreen({super.key, required this.title});
+  const ChooseSubTopicScreen({super.key});
 
   static const String route = "/ChooseSubTopicScreen";
-  final String title;
 
   @override
   Widget build(BuildContext context) {
+    final ChooseSubTopicScreenArgs args =
+        ModalRoute.of(context)?.settings.arguments as ChooseSubTopicScreenArgs;
+
     return Scaffold(
       appBar: OtherPageAppBar(
           callback: () {
             Navigator.pop(context);
           },
-          title: title,
+          title: args.title,
           isVisible: true),
       body: Container(
         width: double.infinity,

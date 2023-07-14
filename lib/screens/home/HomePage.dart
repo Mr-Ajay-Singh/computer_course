@@ -1,3 +1,4 @@
+import 'package:computer_course/screens/chooseSubTopic/ChooseSubtopicScreen.dart';
 import 'package:computer_course/screens/home/component/TextOnImageWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -34,18 +35,23 @@ class HomePage extends StatelessWidget {
               Container(
                 height: 10,
               ),
-              const MainItemComponent(
+              MainItemComponent(
                 title: "Introduction",
                 description: "Beginner's",
                 image: "assets/image4.png",
+                callback: () {},
               ),
               Container(
                 height: 12,
               ),
-              const MainItemComponent(
+              MainItemComponent(
                 title: "Introduction",
                 description: "Beginner's",
                 image: "assets/image4.png",
+                callback: () {
+                  Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                      arguments: ChooseSubTopicScreenArgs("Introduction", ""));
+                },
               ),
               Container(
                 height: 12,
@@ -112,47 +118,51 @@ class MainItemComponent extends StatelessWidget {
       {super.key,
       required this.title,
       required this.description,
-      required this.image});
+      required this.image,
+      required this.callback});
   final String title;
   final String description;
   final String image;
+  final VoidCallback callback;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(
-          image,
-          height: 184,
-          width: double.infinity,
-        ),
-        Container(
-          height: 17,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return InkWell(
+        onTap: callback,
+        child: Column(
           children: [
-            Text(
-              title,
-              textAlign: TextAlign.start,
-              style: const TextStyle(
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF050505),
-                fontSize: 18,
-              ),
+            Image.asset(
+              image,
+              height: 184,
+              width: double.infinity,
             ),
-            Text(
-              description,
-              textAlign: TextAlign.start,
-              style: const TextStyle(
-                fontWeight: FontWeight.normal,
-                color: Color(0xFF595959),
-                fontSize: 14,
-              ),
+            Container(
+              height: 17,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  title,
+                  textAlign: TextAlign.start,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF050505),
+                    fontSize: 18,
+                  ),
+                ),
+                Text(
+                  description,
+                  textAlign: TextAlign.start,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.normal,
+                    color: Color(0xFF595959),
+                    fontSize: 14,
+                  ),
+                )
+              ],
             )
           ],
-        )
-      ],
-    );
+        ));
   }
 }
