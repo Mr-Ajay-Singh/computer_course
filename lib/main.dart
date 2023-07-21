@@ -12,7 +12,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp()); 
 }
 
 class MyApp extends StatefulWidget {
@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp> {
       isOnBoardingFinished = prefs.getBool("isOnBoardingFinished") ?? false;
     });
   }
+
 
   @override
   void initState() {

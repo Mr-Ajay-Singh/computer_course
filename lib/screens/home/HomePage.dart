@@ -50,7 +50,8 @@ class HomePage extends StatelessWidget {
                 image: "assets/image4.png",
                 callback: () {
                   Navigator.pushNamed(context, ChooseSubTopicScreen.route,
-                      arguments: ChooseSubTopicScreenArgs("Introduction", ""));
+                      arguments:
+                          ChooseSubTopicScreenArgs("Introduction", "", 0));
                 },
               ),
               Container(

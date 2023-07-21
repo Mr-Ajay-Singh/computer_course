@@ -1,13 +1,15 @@
 import 'package:computer_course/screens/chooseSubTopic/component/ImageTextItemPrimaryWidget.dart';
 import 'package:flutter/material.dart';
 
+import '../../data/InnerTopicData.dart';
 import 'component/OtherPageAppBar.dart';
 
 class ChooseSubTopicScreenArgs {
   final String title;
   final String message;
+  final int index;
 
-  ChooseSubTopicScreenArgs(this.title, this.message);
+  ChooseSubTopicScreenArgs(this.title, this.message, this.index);
 }
 
 class ChooseSubTopicScreen extends StatelessWidget {
@@ -19,6 +21,8 @@ class ChooseSubTopicScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final ChooseSubTopicScreenArgs args =
         ModalRoute.of(context)?.settings.arguments as ChooseSubTopicScreenArgs;
+
+    var itemList = innerTopicDataList();
 
     return Scaffold(
       appBar: OtherPageAppBar(
@@ -34,53 +38,18 @@ class ChooseSubTopicScreen extends StatelessWidget {
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-              ImageTextItemPrimaryWidget(
-                  text: "text",
-                  description: "description",
-                  image: "assets/image4.png",
-                  isActive: false,
-                  bookmark: () {},
-                  mainClick: () {}),
-              Container(
-                height: 10,
-              ),
-              ImageTextItemPrimaryWidget(
-                  text: "text",
-                  description: "description",
-                  image: "assets/image4.png",
-                  isActive: false,
-                  bookmark: () {},
-                  mainClick: () {}),
-              Container(
-                height: 10,
-              ),
-              ImageTextItemPrimaryWidget(
-                  text: "text",
-                  description: "description",
-                  image: "assets/image4.png",
-                  isActive: false,
-                  bookmark: () {},
-                  mainClick: () {}),
-              Container(
-                height: 10,
-              ),
-              ImageTextItemPrimaryWidget(
-                  text: "text",
-                  description: "description",
-                  image: "assets/image4.png",
-                  isActive: false,
-                  bookmark: () {},
-                  mainClick: () {}),
-              Container(
-                height: 10,
-              ),
-              ImageTextItemPrimaryWidget(
-                  text: "text",
-                  description: "description",
-                  image: "assets/image4.png",
-                  isActive: false,
-                  bookmark: () {},
-                  mainClick: () {}),
+              for (int i = 0; i < itemList.length; i++) ...[
+                ImageTextItemPrimaryWidget(
+                    text: itemList[i].title,
+                    description: itemList[i].description,
+                    image: itemList[i].image,
+                    isActive: false,
+                    bookmark: () {},
+                    mainClick: () {}),
+                Container(
+                  height: 10,
+                ),
+              ],
             ])),
       ),
     );
