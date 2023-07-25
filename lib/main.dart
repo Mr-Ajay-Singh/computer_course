@@ -1,4 +1,5 @@
 import 'package:computer_course/screens/chooseSubTopic/ChooseSubtopicScreen.dart';
+import 'package:computer_course/screens/detailsPage/DetailsScreen.dart';
 import 'package:computer_course/screens/home/HomePage.dart';
 import 'package:computer_course/screens/onBoarding/StartPage1.dart';
 import 'package:computer_course/screens/onBoarding/StartPage2.dart';
@@ -12,7 +13,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(const MyApp()); 
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -33,7 +34,6 @@ class _MyAppState extends State<MyApp> {
       isOnBoardingFinished = prefs.getBool("isOnBoardingFinished") ?? false;
     });
   }
-
 
   @override
   void initState() {
@@ -63,6 +63,7 @@ class _MyAppState extends State<MyApp> {
         StartPage6.route: (context) => const StartPage6(),
         HomePage.route: (context) => const HomePage(),
         ChooseSubTopicScreen.route: (context) => const ChooseSubTopicScreen(),
+        DetailsScreen.route: (context) => const DetailsScreen(),
       },
     );
   }

@@ -39,7 +39,11 @@ class HomePage extends StatelessWidget {
                 title: "Introduction",
                 description: "Beginner's",
                 image: "assets/image4.png",
-                callback: () {},
+                callback: () {
+                  Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                      arguments:
+                          ChooseSubTopicScreenArgs("Introduction", "", 0));
+                },
               ),
               Container(
                 height: 12,
@@ -51,7 +55,7 @@ class HomePage extends StatelessWidget {
                 callback: () {
                   Navigator.pushNamed(context, ChooseSubTopicScreen.route,
                       arguments:
-                          ChooseSubTopicScreenArgs("Introduction", "", 0));
+                          ChooseSubTopicScreenArgs("Introduction", "", 1));
                 },
               ),
               Container(

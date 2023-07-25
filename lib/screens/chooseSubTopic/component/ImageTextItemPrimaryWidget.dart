@@ -72,18 +72,18 @@ class ImageTextItemPrimaryWidget extends StatelessWidget {
                                 maxLines: null,
                               ),
                             ),
-                            SizedBox(
-                                width: 140,
-                                child: Text(
-                                  description,
-                                  textAlign: TextAlign.start,
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.normal,
-                                    color: Color(0xFF030303),
-                                    fontSize: 16,
-                                  ),
-                                  maxLines: null,
-                                ))
+                            // SizedBox(
+                            //     width: 140,
+                            //     child: Text(
+                            //       description,
+                            //       textAlign: TextAlign.start,
+                            //       style: const TextStyle(
+                            //         fontWeight: FontWeight.normal,
+                            //         color: Color(0xFF030303),
+                            //         fontSize: 16,
+                            //       ),
+                            //       maxLines: null,
+                            //     ))
                           ],
                         ),
                       ),
@@ -94,7 +94,7 @@ class ImageTextItemPrimaryWidget extends StatelessWidget {
                             border: Border.all(color: Colors.black, width: 1),
                             borderRadius: BorderRadius.circular(2)),
                         child: const Text(
-                          "Enroll",
+                          "Read",
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             fontWeight: FontWeight.w700,

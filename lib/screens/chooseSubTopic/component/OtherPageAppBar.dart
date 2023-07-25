@@ -43,16 +43,20 @@ class OtherPageAppBar extends StatelessWidget implements PreferredSizeWidget {
                       ),
                     ),
                   ),
-                SizedBox(
-                  width: double.infinity,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      title,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF030303),
-                        fontSize: 20,
+                Padding(
+                  padding: const EdgeInsets.only(left: 30),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        title,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF030303),
+                            fontSize: 20,
+                            overflow: TextOverflow.fade),
+                        maxLines: 1,
                       ),
                     ),
                   ),

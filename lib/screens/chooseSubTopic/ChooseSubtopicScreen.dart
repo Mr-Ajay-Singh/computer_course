@@ -1,4 +1,5 @@
 import 'package:computer_course/screens/chooseSubTopic/component/ImageTextItemPrimaryWidget.dart';
+import 'package:computer_course/screens/detailsPage/DetailsScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../data/InnerTopicData.dart';
@@ -22,7 +23,7 @@ class ChooseSubTopicScreen extends StatelessWidget {
     final ChooseSubTopicScreenArgs args =
         ModalRoute.of(context)?.settings.arguments as ChooseSubTopicScreenArgs;
 
-    var itemList = innerTopicDataList();
+    var itemList = innerTopicDataList(args.index);
 
     return Scaffold(
       appBar: OtherPageAppBar(
@@ -45,7 +46,10 @@ class ChooseSubTopicScreen extends StatelessWidget {
                     image: itemList[i].image,
                     isActive: false,
                     bookmark: () {},
-                    mainClick: () {}),
+                    mainClick: () {
+                      Navigator.pushNamed(context, DetailsScreen.route,
+                          arguments: itemList[i]);
+                    }),
                 Container(
                   height: 10,
                 ),
