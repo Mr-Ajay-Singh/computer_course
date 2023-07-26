@@ -14,19 +14,19 @@ List<InnerTopicData> innerTopicDataList(int index) {
 
   // Create instances of InnerTopicData and add them to the list
   list1.add(InnerTopicData(
-      "Introduction", "Message 1", "assets/image4.png", 1, chapter1[0]));
+      "Introduction", "Message 1", "assets/image4.png", 0, chapter1[0]));
   list1.add(InnerTopicData(
-      "What is a Computer?", "Message 2", "assets/image4.png", 2, chapter1[1]));
+      "What is a Computer?", "Message 2", "assets/image4.png", 1, chapter1[1]));
   list1.add(InnerTopicData("Components of Computer System", "Message 3",
-      "assets/image4.png", 3, chapter1[2]));
+      "assets/image4.png", 2, chapter1[2]));
   list1.add(InnerTopicData("Concept of Hardware and Software", "Message 3",
       "assets/image4.png", 3, chapter1[3]));
   list1.add(InnerTopicData("Concept of Computing, Data, and Information",
-      "Message 3", "assets/image4.png", 3, chapter1[4]));
+      "Message 3", "assets/image4.png", 4, chapter1[4]));
   list1.add(InnerTopicData("Applications of IECT", "Message 3",
-      "assets/image4.png", 3, chapter1[5]));
+      "assets/image4.png", 5, chapter1[5]));
   list1.add(InnerTopicData("Connecting Peripherals to the Computer",
-      "Message 3", "assets/image4.png", 3, chapter1[6]));
+      "Message 3", "assets/image4.png", 6, chapter1[6]));
 
   if (index == 0) return list1;
 
@@ -34,21 +34,76 @@ List<InnerTopicData> innerTopicDataList(int index) {
 
   // Create instances of InnerTopicData and add them to the list
   list2.add(InnerTopicData(
-      "Introduction", "Message 1", "assets/image4.png", 1, chapter2[0]));
+      "Introduction", "Message 1", "assets/image4.png", 0, chapter2[0]));
   list2.add(InnerTopicData("Basics of Operating System", "Message 2",
-      "assets/image4.png", 2, chapter2[1]));
+      "assets/image4.png", 1, chapter2[1]));
   list2.add(InnerTopicData(
-      "Operating System", "Message 3", "assets/image4.png", 3, chapter2[2]));
+      "Operating System", "Message 3", "assets/image4.png", 2, chapter2[2]));
   list2.add(InnerTopicData("User Interface in Operating Systems", "Message 3",
       "assets/image4.png", 3, chapter2[3]));
   list2.add(InnerTopicData("Operating System Simple Setting", "Message 3",
       "assets/image4.png", 3, chapter2[4]));
   list2.add(InnerTopicData(
-      "Common Utilities", "Message 3", "assets/image4.png", 3, chapter2[5]));
-  // list2.add(InnerTopicData("Connecting Peripherals to the Computer",
-  //     "Message 3", "assets/image4.png", 3, chapter1[6]));
-
+      "Common Utilities", "Message 3", "assets/image4.png", 5, chapter2[5]));
   if (index == 1) return list2;
+
+  List<InnerTopicData> list3 = [];
+
+  // Create instances of InnerTopicData and add them to the list
+  list3.add(InnerTopicData(
+      "Introduction", "Message 1", "assets/image4.png", 0, chapter3[0]));
+  list3.add(InnerTopicData("Basics of Computer Networks", "Message 2",
+      "assets/image4.png", 1, chapter3[1]));
+  list3.add(InnerTopicData(
+      "Internet", "Message 3", "assets/image4.png", 2, chapter3[2]));
+  list3.add(InnerTopicData("Internet Architecture", "Message 3",
+      "assets/image4.png", 3, chapter3[3]));
+  list3.add(InnerTopicData("World Wide Web (WWW)", "Message 3",
+      "assets/image4.png", 4, chapter3[4]));
+  list3.add(InnerTopicData("Application of Internet", "Message 3",
+      "assets/image4.png", 5, chapter3[5]));
+  list3.add(InnerTopicData("Connecting to the Internet", "Message 3",
+      "assets/image4.png", 6, chapter3[6]));
+  list3.add(InnerTopicData(
+      "Internet Protocols", "Message 3", "assets/image4.png", 7, chapter3[7]));
+
+  list3.add(InnerTopicData("Internet Security and Cybersecurity", "Message 3",
+      "assets/image4.png", 8, chapter3[8]));
+  list3.add(InnerTopicData(
+      "Cloud Computing", "Message 3", "assets/image4.png", 9, chapter3[9]));
+  list3.add(InnerTopicData("VPN(Virtual Private Network)", "Message 3",
+      "assets/image4.png", 10, chapter3[10]));
+
+  if (index == 2) return list3;
+
+  List<InnerTopicData> list4 = [];
+
+  // Create instances of InnerTopicData and add them to the list
+  list4.add(InnerTopicData(
+      "Introduction", "Message 1", "assets/image4.png", 0, chapter4[0]));
+  list4.add(InnerTopicData("Web Browsing Software's", "Message 2",
+      "assets/image4.png", 1, chapter4[1]));
+  list4.add(InnerTopicData("Search Engines and their Working", "Message 3",
+      "assets/image4.png", 2, chapter4[2]));
+  list4.add(InnerTopicData("Accessing Web Browser(Chrome)", "Message 3",
+      "assets/image4.png", 3, chapter4[3]));
+  list4.add(InnerTopicData(
+      "Understanding URL", "Message 3", "assets/image4.png", 4, chapter4[4]));
+  list4.add(InnerTopicData(
+      "Surfing the Web", "Message 3", "assets/image4.png", 5, chapter4[5]));
+  // list4.add(InnerTopicData("Connecting to the Internet", "Message 3",
+  //     "assets/image4.png", 6, chapter3[6]));
+  // list4.add(InnerTopicData(
+  //     "Internet Protocols", "Message 3", "assets/image4.png", 7, chapter3[7]));
+
+  // list4.add(InnerTopicData("Internet Security and Cybersecurity", "Message 3",
+  //     "assets/image4.png", 8, chapter3[8]));
+  // list4.add(InnerTopicData(
+  //     "Cloud Computing", "Message 3", "assets/image4.png", 9, chapter3[9]));
+  // list4.add(InnerTopicData("VPN(Virtual Private Network)", "Message 3",
+  //     "assets/image4.png", 10, chapter3[10]));
+
+  if (index == 3) return list4;
 
   return list1;
 }
@@ -337,6 +392,9 @@ var chapter1 = [
 var chapter2 = [
   """
 <h1>Introduction</h1>
+<hr>
+<img src="https://i.ibb.co/RhJ0cDv/My-project-1.png" alt="Computer Image">
+<hr>
 <ol>
   <li>In the previous chapter, you learned the basics of computers.</li>
   <li>Now, we'll discuss the user-friendly features of the Windows operating system, which is developed by Microsoft.</li>
@@ -355,6 +413,9 @@ var chapter2 = [
 """,
   """
 <h1>Basics of Operating System</h1>
+<hr>
+<img src="https://i.ibb.co/k8spBmm/operating-system-concept-illustration-114360-2762.jpg" alt="Computer Image">
+<hr>
 <ul>
   <li>An operating system is essential for using a computer effectively.</li>
   <li>It acts as an interface between the computer and the user, making it easier to interact with the machine.</li>
@@ -379,6 +440,9 @@ var chapter2 = [
 <p>It handles file management and manipulation tasks.</p>
 <h2>Basics of Popular Operating Systems (Linux, Windows and macOS)</h2>
 <h3><strong>Linux:</strong></h3>
+<hr>
+<img src="https://i.ibb.co/hC0p3TT/518713.jpg" alt="Computer Image">
+<hr>
 <ul>
   <li>Linux is an operating system created by Linus Torvalds in 1991 as a hobby.</li>
   <li>It is an open-source code operating system and shares features with Unix.</li>
@@ -465,6 +529,9 @@ var chapter2 = [
   <li>Enhanced Security: Windows 10 provides advanced security features like Windows Defender Antivirus, Windows Firewall, and Windows Hello biometric authentication.</li>
 </ul>
 <h3>Windows 11:</h3>
+<hr>
+<img src="https://i.ibb.co/0DHPgRF/906308.jpg" alt="Computer Image">
+<hr>
 <ul>
   <li>Windows 11 is the latest version of Microsoft's operating system, released on October 5, 2021.</li>
   <li>It builds upon the foundation of Windows 10 and introduces several new features and design changes.</li>
@@ -477,7 +544,12 @@ var chapter2 = [
   <li>Improved Snap Layouts and Snap Groups: Snap Layouts allow users to arrange windows in predefined layouts, and Snap Groups remember window arrangements when switching between tasks.</li>
   <li>Virtual Desktops and Multiple Monitor Support: Windows 11 enhances virtual desktop management and multiple monitor experiences.</li>
   <li>Updated System Requirements: Windows 11 has specific hardware requirements, including TPM 2.0, to ensure improved security and performance.</li>
-</ul><h3>macOS:</h3>
+</ul>
+
+<h3>macOS:</h3>
+<hr>
+<img src="https://i.ibb.co/r7GDy1D/493955.jpg" alt="Computer Image">
+<hr>
 <ul>
   <li>macOS is the operating system developed by Apple Inc. for its Macintosh line of computers.</li>
   <li>It is known for its user-friendly interface, stability, and seamless integration with Apple's ecosystem.</li>
@@ -498,7 +570,6 @@ var chapter2 = [
 """,
   """
 <h2>User Interface in Operating Systems</h2>
-
 In the world of operating systems, there are two main types of user interfaces: the Text-Based User Interface (TUI) and the Graphical User Interface (GUI). Each type offers a different way for users to interact with their computers. Let's explore the differences between these two interfaces:
 <h3>Text-Based User Interface (TUI)</h3>
 <ul>
@@ -530,6 +601,10 @@ In the world of operating systems, there are two main types of user interfaces: 
 
 <h3>Some Common Description of User Interface</h3>
 <h3>Task Bar</h3>
+
+<hr>
+<img src="https://i.ibb.co/BgXtD8j/Screenshot-2023-07-26-114035.png" alt="Computer Image">
+<hr>
 <ul>
   <li>If you consider a Hard Disk as a Cabinet in which you can store all the information like files, folders present on the Computer; then you can consider Desktop as a desk. While working people use desk to keep the things, in the same way while working on Computers you are actually working on desktop.</li>
   <li>Any work which has been started is called as a task or anything on the desktop that is running can be called as a task.</li>
@@ -540,12 +615,19 @@ In the world of operating systems, there are two main types of user interfaces: 
 </ul>
 
 <h3>Icons</h3>
+
+<hr>
+<img src="https://i.ibb.co/B6pQwRM/Screenshot-2023-07-26-114429.png" alt="Computer Image">
+<hr>
 <ul>
   <li>When you start the computer, it gets booted. While the computer is in the booting process, we can’t work on it. After the completion of the booting process, the first screen displayed is called the Desktop.</li>
   <li>Various items including Icons are present on this Desktop. With the help of these icons, we can quickly access various programs, files, and folders. Various shortcuts for programs, files, folders, disks, etc., are provided with the help of icons. Icons are special types of buttons that include an image and label given to that button.</li>
 </ul>
 
 <h3>Menu</h3>
+<hr>
+<img src="https://i.ibb.co/GJxL50q/Screenshot-2023-07-26-114555.png" alt="Computer Image">
+<hr>
 <ul>
   <li>Start menu or Start button provides a list of commands to perform various jobs and applications. In various versions of Windows, the Start menu is displayed with the start label. In Windows Vista, the Start menu is displayed with the start button.</li>
   <li>In the Start menu, various programs installed on the computer are shown using a nested structure. With the help of links provided here, you can quickly access the desired program or perform any task. Thus, you do not need to remember the difficult commands and complicated file paths.</li>
@@ -567,27 +649,45 @@ In the world of operating systems, there are two main types of user interfaces: 
 <p>The operating system offers a powerful option called Control Panel through which settings can be changed. Control panel holds a group of tools that help to change the software and hardware settings.</p>
 
 <h3>Changing System Date and Time</h3>
+<hr>
+<img src="https://i.ibb.co/GVyMZVF/Screenshot-2023-07-26-114941.png" alt="Computer Image">
+<hr>
 <p>In the operating system, you can adjust the date and time settings:</p>
 <ul>
   <li>Right-click on the clock in your task bar and click on Adjust Date/Time.</li>
-  <li>Click on the Time Zone tab to set your time zone and enable automatic adjustments for daylight saving changes.</li>
+  <li>Click on the Time Zone tab to set your time zone and enable set time zone automatically.</li>
   <li>Make sure to synchronize with an Internet time server for accurate time updates.</li>
   <li>You can also select a different time server if needed.</li>
-  <li>Use the Update Now button to force an immediate time update.</li>
 </ul>
 
 <h3>Changing Display Properties</h3>
+<hr>
+<img src="https://i.ibb.co/d05rRNk/Screenshot-2023-07-26-115419.png" alt="Computer Image">
+<hr>
+
 <p>You can customize the graphical user interface or desktop behavior:</p>
 <ul>
-  <li>Access Display properties through the Control Panel.</li>
-  <li>Change the background screen by selecting wallpaper and display options from the background tab.</li>
-  <li>Set the desired screen saver and timing, and assign a password for the screen saver in the screen saver tab.</li>
-  <li>Modify the windows appearance style by choosing a scheme in the appearance tab.</li>
-  <li>Adjust desktop effects, including system object icons, in the effects option of the Appearance tab.</li>
-  <li>Customize desktop icons by selecting icons and defining your own scheme.</li>
+  <li>Windows 11 offers variety of options that enable you to change the way the graphical user interface or desktop behaves. Right Click then select Display settings. Following screen appears.
+</li>
+</ul>
+
+<h3>Changing Background Image</h3>
+<hr>
+<img src="https://i.ibb.co/KKg22C4/Screenshot-2023-07-26-115815.png" alt="Computer Image">
+<hr>
+
+<ul>
+  <li>Right Click then select Personalization </li>
+  <li>Then go to wallpaper section </li>
+  <li>Then Select Image You want to set as wallpaper </li>
 </ul>
 
 <h3>Adding or Removing Windows Components</h3>
+
+<hr>
+<img src="https://i.ibb.co/4tc7b4G/Screenshot-2023-07-26-115956.png" alt="Computer Image">
+<hr>
+
 <p>You can manage Windows components using the Add/Remove Programs Properties dialog:</p>
 <ul>
   <li>Access the Windows Setup tab in the Add/Remove Programs section of the Control Panel.</li>
@@ -596,50 +696,35 @@ In the world of operating systems, there are two main types of user interfaces: 
   <li>Check the control panel uninstall program to verify the changes.</li>
 </ul>
 
-<h3>Changing Mouse Properties</h3>
-<p>Modify mouse settings through the mouse properties dialog:</p>
-<h4>Button Tab</h4>
-<ul>
-  <li>Swap mouse buttons and adjust the double-click speed in the Button tab.</li>
-</ul>
-
-<h4>Pointer Tab</h4>
-<ul>
-  <li>Change the default mouse pointers by selecting pointer shapes from the Pointer tab.</li>
-  <li>Browse and select new pointer shapes.</li>
-</ul>
-
-<h4>Motion Tab</h4>
-<ul>
-  <li>Adjust pointer speed and add a pointer trail in the Motion tab.</li>
-</ul>
-
-<h3>Adding and Removing Printers</h3>
-<p>Manage printers through the Printers icon in the Control Panel:</p>
-<ul>
-  <li>To change printer settings, right-click on the printer icon and click Properties. Adjust settings based on your printer type.</li>
-</ul>
-
-<p>To set up a printer, double click on Add Printer and follow the instructions.</p>
-
 """,
   """
 <h2>Common Utilities</h2>
 <p>Instead of using the standard menus to find the command you need, use the right mouse button to click a file or folder. The menu that appears shows the most frequently used commands for that file or folder. You can put a shortcut to any program, document, or printer on the desktop or in any folder. Shortcuts are quick ways to get the items you use often. For example, you can create shortcuts to the printer by using the right mouse button to drag its icon to the desktop. Then to print a file, just drag its icon to the printer icon.</p>
 
 <h3>To Create a Shortcut in a Folder</h3>
-<p>In Windows Explorer, open the folder you want to create the shortcut in. On the file menu, point to New, and then click Shortcut. A new shortcut will be created and can be used instead of selecting from the menu.</p>
+
+<hr>
+<img src="https://i.ibb.co/gt0yzCH/Screenshot-2023-07-26-120446.png" alt="Computer Image">
+<hr>
+
+<p>In Windows Explorer, open the folder you want to create the shortcut in. On the file menu,click on Show More Option, and then click Shortcut. A new shortcut will be created and can be used instead of selecting from the menu.</p>
 
 <h3>Windows Accessories</h3>
 <p>Follow the necessary steps to share a folder:</p>
+<hr>
+<img src="https://i.ibb.co/gt0yzCH/Screenshot-2023-07-26-120446.png" alt="Computer Image">
+<hr>
 <ol>
-  <li>Click the folder you want to share.</li>
+  <li>Right Click the folder you want to share.</li>
+  <li>Click on Show More Option</li>
   <li>From the file menu, select sharing option.</li>
-  <li>Select the sharing tab from the dialog box, choose the "shared as" option, and provide the corresponding details required.</li>
-  <li>You can also share Disk Drives using the same procedure.</li>
+  <li>Move the pointer to the option send to now you will multiple option where you can send</li>
 </ol>
 <h3>1. Notepad</h3>
 <p>You can use Notepad to create or edit text files that do not require formatting and are smaller than 64K. Notepad opens and saves text in ASCII (text-only) format only.</p>
+<hr>
+<img src="https://i.ibb.co/DKzHJy7/My-project-1-1.png" alt="Computer Image">
+<hr>
 
 <h4>To Open a Document:</h4>
 <ol>
@@ -689,14 +774,20 @@ In the world of operating systems, there are two main types of user interfaces: 
 <h3>2. Paint</h3>
 <p>You can use Paint to create, edit, and view pictures. You can paste a Paint picture into another document you’ve created, or use it as your desktop background. You can even use Paint to view and edit scanned photos.</p>
 <p>To run Paint, click on Start and point to Programs, take the mouse pointer to Accessories and click on Paint. You can also type Paint in the Run option of the Start Menu. The following screen appears. Users can type the letters or create images or graphics in the given area and click on the save option in the File menu to save the contents.</p>
+
+<hr>
+<img src="https://i.ibb.co/zZVtsPS/My-project-1-2.png" alt="Computer Image">
+<hr>
+
+
 <h4>To Draw a Straight Line:</h4>
 <ol>
-  <li>Click the required button in the toolbox.</li>
+  <li>Click the required button in the toolbox.  <img src="https://i.ibb.co/PWCpdGg/Screenshot-2023-07-26-122527.png" alt="" width="30" height="30">  </li>
   <li>To draw the line, drag the mouse pointer.</li>
 </ol>
 <h4>To Draw a Curve:</h4>
 <ol>
-  <li>Click the curve tool in the toolbox.</li>
+  <li>Click the curve tool in the toolbox. <img src="https://i.ibb.co/F55rn7k/Screenshot-2023-07-26-122659.png" alt="" width="30" height="30"> </li>
   <li>To choose the width the curve will be, click a line width at the bottom of the toolbox.</li>
   <li>To choose the color the curve will be, click a color.</li>
   <li>Draw a straight line by dragging the mouse pointer.</li>
@@ -705,15 +796,15 @@ In the world of operating systems, there are two main types of user interfaces: 
 </ol>
 <h4>To Draw an Ellipse or Circle:</h4>
 <ol>
-  <li>Click the ellipse tool in the toolbox.</li>
+  <li>Click the ellipse tool in the toolbox. <img src="https://i.ibb.co/DgXqBxt/Screenshot-2023-07-26-122756.png" alt="" width="30" height="30"> </li>
   <li>Drag the tool in the drawing area to draw the ellipse.</li>
 </ol>
 <h4>To Create an Airbrush Effect:</h4>
 <ol>
-  <li>Click in the toolbox.</li>
-  <li>To change the size of the spray area, click a size from the bottom of the toolbox.</li>
+  <li>Click in the toolbox. <img src="https://i.ibb.co/y4dN3ZP/Screenshot-2023-07-26-123012.png" alt="" width="30" height="30"> </li>
+  <li>To change the size of the spray area, click a size from the bottom of the toolbox. </li>
   <li>To choose the spray color, click a color.</li>
-  <li>To spray, drag the mouse pointer. Use the left mouse button to spray with the foreground color, or use the right mouse button to spray with the background color.</li>
+  <li>To spray, drag the mouse pointer. Use the left mouse button to spray with the foreground color</li>
 </ol>
 <h4>To Create Custom Colors:</h4>
 <ol>
@@ -731,13 +822,14 @@ In the world of operating systems, there are two main types of user interfaces: 
 <p>On the Image menu, click Invert Colors.</p>
 <h4>To Change the Color of an Existing Line:</h4>
 <ol>
-  <li>Click in the toolbox.</li>
+  <li>Click in the toolbox.<img src="https://i.ibb.co/G5RYqZw/Screenshot-2023-07-26-123125.png" alt="" width="30" height="30"></li>
   <li>Click a different color in the color box.</li>
   <li>Position the paint cursor so that it is touching the line, and then click.</li>
 </ol>
 <h4>To Copy Part of a Picture:</h4>
+
 <ol>
-  <li>Select the area you want to copy by clicking or in the toolbox and then dragging the cursor to define the area.</li>
+  <li>Select the area you want to copy by clicking <img src="https://i.ibb.co/yRtJtWy/Screenshot-2023-07-26-123239.png" alt="" width="30" height="30"> or <img src="https://i.ibb.co/xMSPStV/Screenshot-2023-07-26-123409.png" alt="" width="30" height="30">  and then dragging the cursor to define the area.</li>
   <li>On the Edit menu, click Copy.</li>
   <li>On the Edit menu, click Paste.</li>
   <li>Drag the selection where you want it.</li>
@@ -751,6 +843,11 @@ In the world of operating systems, there are two main types of user interfaces: 
 </ol>
 <h3>3. Calculator</h4>
 <p>To run Calculator, click on Start and point to Programs, take the mouse pointer to Accessories and click on Calculator. You can also type Calc in the Run option of the Start Menu. The following screen appears.</p>
+
+<hr>
+<img src="https://i.ibb.co/gRxcLpD/Screenshot-2023-07-26-123541.png" alt="Computer Image">
+<hr>
+
 <ol>
   <li>
     <h4>To Perform a Simple Calculation:</h4>
@@ -785,7 +882,12 @@ In the world of operating systems, there are two main types of user interfaces: 
 </ol>
 
 <h3>4. Character Map</h4>
-<p>To open Character Map, click on Start and point to Programs, take the mouse pointer to Accessories and click on Character Map. The following screen appears.</p>
+<p>To open Character Map, click on Start then search Character Map and click on Character Map. The following screen appears.</p>
+
+<hr>
+<img src="https://i.ibb.co/nnpbzxg/Screenshot-2023-07-26-123710.png" alt="Computer Image">
+<hr>
+
 <h4>To Add a Special Character to a Document:</h4>
 <ol>
   <li>Open Character Map.</li>
@@ -807,5 +909,596 @@ In the world of operating systems, there are two main types of user interfaces: 
 <p>By using Dial-up Networking, you can gain access to shared information on another computer, even if the computer is not part of a network. To use this feature, the computer you are dialing into must be set up as a network server to share its resources. For instance, if you have a computer at home, you can dial in and connect to your work computer and access its network through a network server. Both the home computer and the network server must have modems installed. To start the Dial-up Networking setup wizard, double click on My Computer, and then double-click on Dial-up Networking to follow the instructions.</p>
 
 
+""",
+];
+
+var chapter3 = [
+  """ 
+  <h4>Introduction</h4>
+  <hr>
+<img src="https://i.ibb.co/qYmXTMG/online-world-concept-illustration-114360-1092.jpg" alt="Computer Image">
+<hr>
+<p>Computers in organizations have been used to extract and correlate information.</p>
+<p>Resource sharing, high reliability, and communication can be achieved by connecting these computers.</p>
+<p>Computer Networks offer better price/performance ratio over mainframe computers.</p>
+<p>Networks also deliver services to individuals like access to remote information, pay their bills, manage their bank accounts, and handle their investments electronically.</p>
+<p>World Wide Web contains information about almost everything.</p>
+<p>Another important category of network use is person-to-person interaction, and Email is already widely used by millions of people and now also contains audio, video besides text.</p>
+<p>Irrespective of its place, the Internet can be used for a number of purposes like accessing the World Wide Web, email, etc.</p>
+
+  """,
+  """
+<h4>Basics of Computer Networks</h4>
+<p>The merging of computers and communications has profoundly influenced the organization of computer systems. The traditional model of a single mainframe computer serving all organizational needs has been replaced by computer networks. These systems are called Computer Networks.</p>
+<h4>Local Area Network (LAN)</h4>
+<hr>
+<img src="https://i.ibb.co/3d86CpD/network-switch-with-cables-1137-6.jpg" alt="Computer Image">
+<hr>
+<ul>
+  <li>LAN is a network confined to a small area, such as a single building, a small room, or a campus.</li>
+  <li>LANs are privately owned and limited in size, typically covering a radius of about 1 km.</li>
+  <li>Three characteristics distinguish LANs from other types of networks: Size, Transmission Technology, and Topology.</li>
+</ul>
+<h5>Size:</h5>
+<p>LANs are restricted in size and usually spread across a range of 1 km in radius.</p>
+<h5>Transmission Technology:</h5>
+<p>Data in LANs is transmitted using various technologies, ranging from 10 Mbps to 1000 Mbps (1 Giga Bit per second) or even more.</p>
+<h5>Topology:</h5>
+<p>Topology refers to the physical arrangement of computers in the network. Common topologies include Bus and Star configurations.</p>
+<ul>
+  <li>In a Bus (Linear Cable) network, only one computer is allowed to transmit data at a time, requiring an arbitration method to resolve conflicts.</li>
+  <li>In a Star topology, a central hub is used to connect multiple computers, and over 90% of LAN installations use this topology.</li>
+</ul>
+<p>The most commonly used standard for LANs is IEEE 802.3, popularly known as Ethernet. It defines the types of cables and connectors that can be used. The data transmission rate for Ethernet is typically 10 Mbps, with variations in different implementations.</p>
+<ul>
+  <li>Thick Ethernet, also known as 10 Base-5, uses thick coaxial cable and can create a LAN segment of up to 500 meters.</li>
+  <li>Thin Ethernet or 10 Base-2 is implemented using thin coaxial cable, and its LAN segment is limited to 185 meters with BNC connectors.</li>
+  <li>Today, Unshielded Twisted Pair (UTP) cable is used in over 90% of LAN installations. UTP CAT5 (Category 5) cable and switches can achieve data transfer rates of 100 Mbps, known as 100 Base-T.</li>
+</ul>
+<h4>Wide Area Networks (WAN)</h4>
+<hr>
+<img src="https://i.ibb.co/99xdRhW/saas-concept-collage-23-2149399286.jpg" alt="Computer Image">
+<hr>
+<ul>
+  <li>A Wide Area Network spans a large geographical area, such as a country or a continent.</li>
+  <li>WANs are geographically dispersed telecommunications networks used to transmit data beyond local areas.</li>
+  <li>Communications in WANs involve transmitting data from the source to the destination through a network of intermediate switching nodes, often called routers. These routers play a crucial role in directing data packets to their intended destinations, even across interconnected networks.</li>
+  <li>Wide Area Networks may be privately owned or rented, but they often include public (shared user) networks.</li>
+  <li>In most WANs, the network contains numerous cables or telephone lines, each connecting a pair of routers. If two routers that don't share a cable wish to communicate, they must do so indirectly through other routers. When a packet is sent from one router to another via intermediate routers, the packet is received in its entirety, stored until the required output line is free, and then forwarded.</li>
+</ul>
+""",
+  """
+<h4>Concept of Internet</h4>
+<p>One of the greatest things about the Internet is that it is a global collection of interconnected networks, both big and small. These networks come together in various ways to form the single entity we know as the Internet. The term "The Internet" was first used in 1982 to describe the vast collection of interconnected networks that use TCP/IP protocols.</p>
+<h4>History of the Internet</h4>
+<p>The origin of the Internet can be traced back to APRANET (Advanced Research Project Agency Networks), which emerged in 1957 from the U.S. Department of Defense. It was initially designed as a fault-tolerant Wide Area Computer Networking paradigm that could survive a nuclear attack. Over time, the Internet grew from four host computer systems to tens of millions, becoming the most powerful and uncontrollable force in the world.</p>
+<p>While nobody owns the Internet, it is monitored and maintained in different ways. The Internet Society, a non-profit group established in 1992, oversees the formation of policies and protocols that define how we use and interact with the Internet.</p>
+<h4>Evolution and Usage of the Internet</h4>
+<p>The Internet was initially developed as a tool to advance communications and research among academic institutions. In the early 1990s, as the Internet became accessible to a broad consumer audience, people viewed it as a faster version of postal mail. However, in the past decade, consumers have begun using the Internet for entertainment, shopping, business, banking, and personal productivity.</p>
+<h4>Internet Protocol (IP) Address</h4>
+<p>A computer on the Internet can be addressed using an Internet Protocol (IP) address, which consists of the Address of the Network and the Address of the computer within the Network. IP addresses are typically expressed in decimal format as dotted decimal numbers for easier human comprehension, but they are communicated in binary form.</p>
+<p>Each IP address is a 32-bit number, represented by four octets (eight positions each) in binary form. Each octet can have two states (1 or 0), resulting in 256 possible combinations per octet. This allows each octet to contain any value between 0 and 255, leading to 4,294,967,296 possible unique values in total.</p>
+<p>Out of the billions of possible combinations, certain values are reserved and not used as typical IP addresses. For example, 0.0.0.0 is reserved for the default network, and 255.255.255.255 is used for broadcasts.</p>
+<h4>Domain Name System (DNS)</h4>
+<p>As the Internet grew, managing connections through IP addresses became unwieldy. To simplify this, the Domain Name System (DNS) was created in 1983. The DNS automatically maps text names to IP addresses, providing meaningful names to addresses.</p>
+<p>The DNS scheme gives us meaningful names for addresses, such as:</p>
+<p>username@OrganizationName.OrganizationType.Geography</p>
+<p>mailto:Username@OrganizationName.OrganizationType.Geography</p>
+""",
+  """
+<h4>Internet Architecture</h4>
+<hr>
+<img src="https://i.ibb.co/nPgspGd/My-project-1-3.png" alt="Computer Image">
+<hr>
+<ol>
+  <li>The internet architecture can be broadly classified into three layers.</li>
+  <li>The first layer consists of Internet Backbones and very high-speed network lines.</li>
+  <li>The National Science Foundation (NSF) established the first high-speed backbone in 1987, called NSFNET, which connected 170 smaller networks together and operated at 1.544 Mbps (million bits per second).</li>
+  <li>Backbones are typically fiber optic trunk lines with multiple fiber optic cables combined together to increase capacity. Fiber optic cables designated as OC-48 can transmit 2,488 Mbps (2.488 Gbps).</li>
+  <li>The nodes are known as Network Access Points (NAPs).</li>
+  <li>The second layer is typically known as Internet Service Providers (ISPs).</li>
+  <li>ISPs are connected to the Backbones at NAPs with high-speed lines.</li>
+  <li>End users, which form the third layer, are connected to ISPs via dial-up or leased lines and modems.</li>
+  <li>The speed of communication for end users typically ranges from 1400 bps to 2048 kbps.</li>
+</ol>
+<h4>Routers and Network Connectivity</h4>
+<ol>
+  <li>The routers play a crucial role in determining where to send information from one computer to another.</li>
+  <li>They are specialized computers that send messages to their destinations along thousands of pathways.</li>
+  <li>Routers join two networks, passing information from one to the other, while also protecting the networks from unnecessary traffic spillage between them.</li>
+  <li>Regardless of the number of networks attached, the basic operation and function of a router remain the same.</li>
+  <li>As the Internet is one huge network composed of tens of thousands of smaller networks, the use of routers is an absolute necessity.</li>
+  <li>Messages can travel halfway across the world through several different networks and arrive at another computer in a fraction of a second, thanks to the efficient routing and connectivity provided by these devices.</li>
+</ol>
+""",
+  """
+<h4>World Wide Web (WWW)</h4>
+<hr>
+<img src="https://i.ibb.co/BcgQVW7/tiny-business-people-with-digital-devices-big-globe-surfing-internet-internet-addiction-real-life-su.jpg" alt="Computer Image">
+<hr>
+<ol>
+  <li>The World Wide Web (WWW) integrates all the information from the Internet into one big web.</li>
+  <li>It is the most user-friendly service, allowing users to connect to any computer with information.</li>
+  <li>Web Servers are software that run on Internet servers and provide information to Web users and other servers.</li>
+  <li>Internet servers can be either servers or clients. Servers provide services to other machines, while clients connect to those services.</li>
+  <li>Various types of servers exist, such as Web servers, e-mail servers, and FTP servers, serving the needs of Internet users worldwide.</li>
+  <li>The information on the Web server is compiled in Hyper Text Markup Language (HTML), which includes text and images linked to different documents.</li>
+  <li>HTML provides a 2-D effect, but for a 3-D effect and sound, Virtual Reality Modeling Language (VRML) can be used effectively.</li>
+  <li>A Web browser is software that provides an interface to the WWW and runs on the user's machine.</li>
+  <li>Web browsers are available in two formats: Graphical format and Text format.</li>
+  <li>Every Web server on the Internet conforms to the Hypertext Transfer Protocol (HTTP), which describes the rules for client-server communication.</li>
+</ol>
+<h4>Uniform Resource Locator (URL) and Web Communication</h4>
+<hr>
+<img src="https://i.ibb.co/YcqT3XZ/browsing-online-concept-illustration-114360-4684.jpg" alt="Computer Image">
+<hr>
+<p>For locating any document on the WWW, a unique address known as a Uniform Resource Locator (URL) is required. It consists of three parts:</p>
+<ol>
+  <li>Protocol name</li>
+  <li>Server address</li>
+  <li>Document location within the server's space</li>
+</ol>
+<p>When you connect to http://www.doeacc.org.in/info.htm to read a page, you are a user sitting at a client's machine accessing the DOEACC web server. The server machine finds the page you requested and sends it to you. Clients direct their requests to a specific software server running on the server machine. For example, if you are running a Web browser on your machine, it will want to talk to the Web Server on the server machine, not the e-mail server.</p>
+
+""",
+  """ 
+<h4>Application of Internet</h4>
+<hr>
+<img src="https://i.ibb.co/J35Bk6c/My-project-1-4.png" alt="Computer Image">
+<hr>
+<ul>
+  <li><strong>E-mail:</strong> E-mail is a way to communicate offline between different Internet users. It allows sending messages instantaneously to people across town, country, or the globe. Additionally, e-mail enables the exchange of digitized pictures, sounds, and entire computer programs. It is extensively used for communication and has radically reshaped how the world communicates. Users can also access electronic libraries and archives worldwide through e-mail, providing access to valuable resources. Furthermore, individuals can subscribe to mailing lists, which function as electronic equivalents of magazines or newspapers, where subscribers can interact and create private forums.</li>
+  <li><strong>Chat:</strong> Chat or Internet Relay Chat (IRC) is a multi-user, real-time chat platform. It allows multiple users to participate in conversations simultaneously. Chat services can be utilized for various purposes, including marketing, collaboration, and providing customer support in the business sector.</li>
+  <li><strong>News Groups:</strong> Newsgroups serve as platforms for users to communicate and share their views on specific subjects. These discussions consist of notes written to a central Internet site and are redistributed through Usenet, a worldwide network of news discussion groups. Usenet uses the Network News Transfer Protocol (NNTP) to facilitate these discussions. Newsgroups are categorized into subject hierarchies, with subtopic names representing sub-categories under major subject categories like news, recreation, society, science, computers, and more. Users can post to existing newsgroups, respond to previous posts, and even create new ones.</li>
+</ul>
+<h4>Other Internet Services</h4>
+<ul>
+  <li><strong>Telnet:</strong> Telnet is an Internet tool that enables users to log in to a host computer on the Internet. Companies often provide guest login options accessible through Telnet. It operates in two modes: Command mode, used to open, close, and quit the remote host computer, and Input mode, which allows inputting various data.</li>
+  <li><strong>Gopher:</strong> Gopher is a menu-based information retrieval tool that helps users search for keywords and access relevant menus. Before the World Wide Web (WWW) came into existence, Gopher was used to retrieve information by linking up to Telnet. It allowed users to navigate and find resources on the Internet.</li>
+  <li><strong>FTP (File Transfer Protocol):</strong> FTP is an application protocol used to transfer files from one user's computer to another computer over the Internet. It facilitates the transfer of web page files from their creators to the computer acting as their server on the Internet. Additionally, FTP is commonly used to download programs and various files from servers to users' computers.</li>
+</ul>
+""",
+  """
+<h4>Connecting to the Internet:</h4>
+<ol>
+  <li><strong>Dial-up:</strong> In dial-up Internet access, users connect to the Internet Service Provider (ISP) through telephone lines using a modem. Dial-up connections are suitable for remote areas with low population, where broadband setups are not feasible. However, dial-up connections have slower speeds compared to other options, and while using the Internet, the telephone line cannot be accessed simultaneously.</li>
+  <li><strong>Broadband:</strong> Broadband communication uses a wide range of frequencies for information transmission, resulting in higher transmission capacity. Analog modems can achieve speeds of 56 kbps or more on telephone lines, while ADSL (Asymmetric Digital Subscriber Line) technology can increase data transmission speed to several Mbps. Broadband connections offer faster transmission compared to dial-up, and users can access the Internet and use the telephone simultaneously.</li>
+  <li><strong>Wi-Fi (Wireless Fidelity):</strong> Wi-Fi is a wireless technology that connects computers and devices to each other without the need for cables or wires. It reduces the expenses associated with configuring and maintaining a network. Wi-Fi networks are particularly useful in places where setting up cable networks is difficult or not feasible. However, Wi-Fi networks have limitations on size, and they may be less secure compared to wired networks.</li>
+</ol>
+<h4>Preparing the Computer for Internet Access and LAN:</h4>
+<hr>
+<img src="https://i.ibb.co/HzHvwPq/My-project-1-5.png" alt="Computer Image">
+<hr>
+<ol>
+  <li>Click on the Start button and select "Settings" (the gear icon) from the menu.</li>
+  <li>In the Settings window, click on "Network & internet" to access network settings.</li>
+  <li>Under "Network & internet," make sure that the "Status" tab is selected on the left sidebar.</li>
+  <li>Check the status of your internet connection under "Network status." If you have an Ethernet cable connected, it should show "Connected." If not, connect the Ethernet cable to the computer and wait for it to establish a connection.</li>
+  <li>If you want to connect via Wi-Fi, click on "Show available networks" under "Network status." Select your Wi-Fi network from the list and click "Connect." Enter the Wi-Fi password if required.</li>
+  <li>Once connected to the internet, you can also set up a LAN (Local Area Network) by clicking on "Change adapter options" under "Advanced network settings."</li>
+  <li>In the Network Connections window, you will see a list of network adapters. Right-click on the Ethernet adapter (for wired LAN) or Wi-Fi adapter (for wireless LAN) and select "Properties."</li>
+  <li>In the adapter properties, make sure that "Client for Microsoft Networks" and "File and Printer Sharing for Microsoft Networks" are installed. If not, click on "Install" and select these components from the list.</li>
+  <li>If you want to use TCP/IP protocol for internet access and LAN, make sure that "Internet Protocol Version 4 (TCP/IPv4)" is installed. Click on "Install" and select this component if needed.</li>
+  <li>Configure the TCP/IP settings by clicking on "Internet Protocol Version 4 (TCP/IPv4)" and then clicking on "Properties."</li>
+  <li>In the TCP/IPv4 properties, you can choose to obtain IP address and DNS server addresses automatically (if your network supports DHCP) or enter them manually if required.</li>
+  <li>Once all the necessary components and settings are configured, click "OK" to save the changes.</li>
+  <li>Your computer is now prepared for both internet access and LAN connectivity.</li>
+</ol>
+""",
+  """ 
+<h1>Internet Protocols</h1>
+
+<p>Internet protocols are the set of rules and conventions that govern communication and data exchange over the Internet. These protocols define how data packets are formatted, transmitted, and received between devices connected to the Internet. The most fundamental and widely used Internet protocol suite is the TCP/IP (Transmission Control Protocol/Internet Protocol).</p>
+
+<h2>TCP/IP Protocol Suite</h2>
+<p>TCP/IP is the foundational protocol suite for the Internet. It consists of two main protocols:</p>
+<ul>
+  <li><strong>Transmission Control Protocol (TCP)</strong>: TCP ensures reliable, ordered, and error-checked delivery of data packets between devices. It establishes a connection-oriented communication method, allowing data to be exchanged in a seamless and organized manner.</li>
+  <li><strong>Internet Protocol (IP)</strong>: IP is responsible for addressing and routing data packets across the network. It assigns unique IP addresses to devices and determines the best path for data transmission.</li>
+</ul>
+
+<h2>HTTP (Hypertext Transfer Protocol)</h2>
+<p>HTTP is a protocol used for accessing and retrieving resources from the World Wide Web. It governs the communication between web browsers and web servers. When you type a URL in your web browser, it sends an HTTP request to the web server, which responds with the requested web page.</p>
+
+<h2>FTP (File Transfer Protocol)</h2>
+<p>FTP is a protocol used for transferring files between computers on the Internet. It enables users to upload and download files from remote servers, making it useful for website maintenance and file sharing.</p>
+
+<h2>SMTP (Simple Mail Transfer Protocol)</h2>
+<p>SMTP is the protocol used for sending and receiving email messages between email servers. It handles the transfer of outgoing emails from the sender's email server to the recipient's email server.</p>
+
+<h2>POP3 (Post Office Protocol 3) and IMAP (Internet Message Access Protocol)</h2>
+<p>These protocols are used for receiving email messages by the end-users from email servers. POP3 downloads the messages to the user's device, while IMAP allows users to access their emails directly from the server.</p>
+
+<h2>DNS (Domain Name System)</h2>
+<p>DNS is a critical protocol that translates human-readable domain names (like www.example.com) into IP addresses. It enables users to access websites using easy-to-remember domain names rather than numerical IP addresses.</p>
+
+<h2>DHCP (Dynamic Host Configuration Protocol)</h2>
+<p>DHCP is used to automatically assign IP addresses to devices on a network. It simplifies the process of configuring devices to join a network, as IP addresses are assigned dynamically by a DHCP server.</p>
+
+<h2>ICMP (Internet Control Message Protocol)</h2>
+<p>ICMP is used for diagnostic and error reporting purposes. It allows devices to send error messages, such as "ping" requests, to check the reachability of other devices on the network.</p>
+
+<p>These internet protocols work together to ensure seamless communication and data exchange across the Internet. They are essential for enabling various internet services, such as web browsing, email communication, file sharing, and more. The continued development and standardization of these protocols play a vital role in the smooth functioning of the modern internet.</p>
+
+""",
+  """
+<h1>Internet Security and Cybersecurity</h1>
+
+<hr>
+<img src="https://i.ibb.co/YtDNMdC/information-security-infographic-set-98292-1658.jpg" alt="Computer Image">
+<hr>
+
+<p>Internet security and cybersecurity are essential aspects of using the Internet safely and protecting sensitive information from unauthorized access and cyber threats. As the Internet has become an integral part of our daily lives, ensuring security has become paramount to safeguard personal and organizational data.</p>
+
+<h2>Common Cybersecurity Threats</h2>
+<p>Various cyber threats pose risks to individuals and organizations on the Internet. Some of the common cybersecurity threats include:</p>
+<ul>
+  <li><strong>Malware:</strong> Malicious software, such as viruses, worms, Trojans, and ransomware, can infect computers and mobile devices, causing data breaches, data loss, and financial damages.</li>
+  <li><strong>Phishing:</strong> Phishing attacks involve tricking users into revealing sensitive information, such as passwords or credit card details, by disguising as legitimate entities through fake emails or websites.</li>
+  <li><strong>Identity Theft:</strong> Cybercriminals may steal personal information, such as Social Security numbers or bank account details, to impersonate victims for fraudulent activities.</li>
+  <li><strong>Denial of Service (DoS) Attacks:</strong> These attacks overload servers or networks, making services unavailable to legitimate users.</li>
+  <li><strong>Man-in-the-Middle Attacks:</strong> Attackers intercept and manipulate communications between two parties, potentially stealing sensitive data or injecting malicious content.</li>
+</ul>
+
+<h2>Internet Security Measures</h2>
+<p>To protect against cyber threats, users and organizations can implement several security measures:</p>
+<ul>
+  <li><strong>Firewalls:</strong> Firewalls act as barriers between a trusted internal network and untrusted external networks, monitoring and filtering incoming and outgoing traffic to prevent unauthorized access.</li>
+  <li><strong>Antivirus and Anti-Malware Software:</strong> Installing reliable antivirus and anti-malware software helps detect and remove malicious programs from devices.</li>
+  <li><strong>Encryption:</strong> Encrypting data ensures that sensitive information remains unreadable to unauthorized individuals even if intercepted.</li>
+  <li><strong>Strong Passwords:</strong> Using strong and unique passwords for online accounts and services adds an extra layer of security.</li>
+  <li><strong>Multi-Factor Authentication (MFA):</strong> Enabling MFA requires users to provide multiple forms of identification before gaining access to an account or system.</li>
+  <li><strong>Regular Software Updates:</strong> Keeping software and operating systems up-to-date helps patch security vulnerabilities.</li>
+</ul>
+
+<h2>Secure Web Browsing</h2>
+<p>When browsing the web, users should practice safe online habits:</p>
+<ul>
+  <li>Verify website authenticity and ensure secure connections (look for "https://" and a padlock icon).</li>
+  <li>Avoid clicking on suspicious links in emails or messages.</li>
+  <li>Be cautious when downloading files or software from unknown sources.</li>
+  <li>Regularly clear browser cache and cookies.</li>
+</ul>
+
+<h2>Importance of Cybersecurity Awareness</h2>
+<p>Cybersecurity awareness is crucial for all Internet users. Understanding potential threats, staying informed about the latest security practices, and being vigilant while using the Internet can significantly reduce the risk of falling victim to cyberattacks.</p>
+
+<p>By implementing robust security measures and adopting safe online practices, individuals and organizations can navigate the Internet safely and protect their valuable information from cyber threats.</p>
+
+""",
+  """ 
+<h1>Cloud Computing</h1>
+<hr>
+<img src="https://i.ibb.co/rpDz1qX/cloud-services-isometric-composition-with-big-cloud-computing-infrastructure-elements-connected-with.jpg" alt="Computer Image">
+<hr>
+<p>Cloud computing is a paradigm in which computing resources and services, such as storage, processing power, and applications, are delivered over the internet. Instead of maintaining physical hardware and software on-premises, users can access and utilize these resources remotely through the internet. Cloud computing offers numerous benefits and has become a popular solution for individuals and businesses alike.</p>
+
+<h2>Types of Cloud Computing Services</h2>
+<p>There are three primary types of cloud computing services:</p>
+<ul>
+  <li><strong>Infrastructure as a Service (IaaS):</strong> IaaS provides virtualized computing resources over the internet. Users can rent virtual servers, storage, and networking components on a pay-as-you-go basis. This model allows for flexibility and scalability without the need to invest in physical hardware.</li>
+  <li><strong>Platform as a Service (PaaS):</strong> PaaS offers a platform and environment for developers to build, deploy, and manage applications without the complexities of managing underlying infrastructure. It provides tools, frameworks, and databases to streamline the development process.</li>
+  <li><strong>Software as a Service (SaaS):</strong> SaaS delivers software applications over the internet on a subscription basis. Users can access and use the software through a web browser without the need for installation or maintenance. Popular examples include email services, office productivity suites, and customer relationship management (CRM) software.</li>
+</ul>
+
+<h2>Benefits of Cloud Computing</h2>
+<p>Cloud computing offers several advantages to individuals and businesses:</p>
+<ul>
+  <li><strong>Cost Savings:</strong> Cloud computing eliminates the need to invest in expensive hardware and infrastructure. Users can pay for resources on a usage basis, reducing capital expenses.</li>
+  <li><strong>Scalability:</strong> Cloud services can quickly scale up or down based on demand, allowing businesses to adjust resources as needed without disruptions.</li>
+  <li><strong>Flexibility:</strong> Cloud computing enables access to resources from anywhere with an internet connection, promoting remote work and collaboration.</li>
+  <li><strong>Automatic Updates:</strong> Cloud providers handle software updates and maintenance, ensuring that users always have access to the latest features and security patches.</li>
+  <li><strong>Reliability:</strong> Cloud service providers often have redundant systems and data centers, reducing the risk of downtime and data loss.</li>
+</ul>
+
+<h2>Cloud Security</h2>
+<p>While cloud computing offers numerous benefits, security and data protection are important considerations:</p>
+<ul>
+  <li><strong>Data Encryption:</strong> Data stored in the cloud should be encrypted to protect it from unauthorized access.</li>
+  <li><strong>Access Control:</strong> Cloud providers should implement robust access control mechanisms to ensure that only authorized users can access sensitive data and resources.</li>
+  <li><strong>Compliance and Regulations:</strong> Users should ensure that cloud providers comply with industry-specific regulations and data privacy laws.</li>
+  <li><strong>Backup and Recovery:</strong> Regular data backups and disaster recovery plans are essential to safeguard against data loss and service interruptions.</li>
+  <li><strong>Multi-Factor Authentication (MFA):</strong> Implementing MFA adds an extra layer of security to cloud accounts, reducing the risk of unauthorized access.</li>
+</ul>
+
+<h2>Popular Cloud Providers</h2>
+<p>Several major cloud service providers offer a wide range of cloud computing services:</p>
+<ul>
+  <li><strong>Amazon Web Services (AWS):</strong> AWS is one of the largest and most comprehensive cloud platforms, offering a wide array of services for computing, storage, databases, machine learning, and more.</li>
+  <li><strong>Microsoft Azure:</strong> Microsoft Azure provides a suite of cloud services, including virtual machines, app services, AI, and IoT solutions.</li>
+  <li><strong>Google Cloud Platform (GCP):</strong> GCP offers cloud services for data storage, machine learning, application development, and analytics.</li>
+  <li><strong>IBM Cloud:</strong> IBM Cloud provides a range of cloud services, including IaaS, PaaS, and SaaS solutions.</li>
+  <li><strong>Oracle Cloud:</strong> Oracle Cloud offers cloud infrastructure, applications, and platform services for businesses.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Cloud computing has revolutionized the way computing resources and services are accessed and utilized. Its flexibility, scalability, and cost-effectiveness have made it an attractive solution for businesses and individuals worldwide. However, ensuring proper security measures and understanding the various cloud service options are essential to harness the full potential of cloud computing while safeguarding data and operations.</p>
+
+""",
+  """
+<h1>Virtual Private Network (VPN)</h1>
+<hr>
+<img src="https://i.ibb.co/2q5m5hy/gradient-vpn-illustration-23-2149246887.jpg" alt="Computer Image">
+<hr>
+<p>A Virtual Private Network (VPN) is a secure and private network connection that allows users to access the internet or a private network while encrypting their data and protecting their identity and online activities. VPNs have become increasingly popular due to their ability to enhance security and privacy, especially when using public Wi-Fi networks or accessing sensitive information remotely.</p>
+
+<h2>How VPN Works</h2>
+<p>VPN works by creating a secure tunnel between the user's device and the VPN server. When a user connects to a VPN, their internet traffic is encrypted and routed through this tunnel, making it difficult for anyone, including internet service providers and potential attackers, to intercept and view the data. The VPN server acts as an intermediary between the user's device and the internet, masking the user's IP address and providing an alternative IP address for browsing.</p>
+
+<h2>Benefits of VPN</h2>
+<p>Using a VPN offers several advantages to users:</p>
+<ul>
+  <li><strong>Enhanced Security:</strong> VPNs encrypt data, ensuring that sensitive information remains secure and protected from cyber threats.</li>
+  <li><strong>Privacy and Anonymity:</strong> VPNs hide the user's IP address and online activities, providing anonymity and preventing websites and advertisers from tracking their online behavior.</li>
+  <li><strong>Bypassing Geo-restrictions:</strong> With a VPN, users can access content and websites that may be restricted or blocked in their region due to geo-restrictions.</li>
+  <li><strong>Public Wi-Fi Security:</strong> VPNs are especially useful when connecting to public Wi-Fi networks, as they protect users from potential security risks and data breaches associated with unsecured networks.</li>
+  <li><strong>Remote Access:</strong> VPNs allow users to access their private networks and resources securely from remote locations, making it ideal for businesses with remote employees.</li>
+</ul>
+
+<h2>Types of VPN</h2>
+<p>There are several types of VPNs, each with its specific use case:</p>
+<ul>
+  <li><strong>Remote Access VPN:</strong> Remote access VPN allows individual users to connect securely to a private network from remote locations, such as employees accessing their workplace network from home.</li>
+  <li><strong>Site-to-Site VPN:</strong> Site-to-Site VPN, also known as router-to-router VPN, connects multiple networks or locations, enabling seamless communication and sharing of resources between different sites of an organization.</li>
+  <li><strong>Mobile VPN:</strong> Mobile VPN provides secure access to resources and applications for mobile devices, ensuring data protection when users access corporate networks via smartphones or tablets.</li>
+</ul>
+
+<h2>Choosing a VPN</h2>
+<p>When selecting a VPN service, consider the following factors:</p>
+<ul>
+  <li><strong>Security Protocols:</strong> Ensure that the VPN service uses strong encryption protocols, such as OpenVPN or IPSec, for data protection.</li>
+  <li><strong>Server Locations:</strong> Check if the VPN provider has servers in the locations you need to access to bypass geo-restrictions.</li>
+  <li><strong>Logging Policy:</strong> Look for a VPN service with a strict no-logs policy to ensure that your online activities are not being recorded or monitored.</li>
+  <li><strong>Speed and Performance:</strong> Test the VPN's speed and performance to ensure it meets your requirements for smooth browsing and streaming.</li>
+  <li><strong>Compatibility:</strong> Check if the VPN is compatible with your devices and operating systems.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Virtual Private Networks offer a secure and private way for users to access the internet and connect to private networks while protecting their data and online privacy. Whether for personal use to enhance security and bypass geo-restrictions or for businesses to enable remote access and data protection, VPNs have become an essential tool in today's digital landscape.</p>
+
+"""
+];
+
+var chapter4 = [
+  """
+<h1>Introduction</h1>
+<ul>
+  <li>The Internet is a collection of computer networks that connects millions of computers around the world. It offers various services, including the World Wide Web (WWW), discussed in the last chapter and much more.</li>
+  <li>Through the Internet, you can retrieve documents, view images, animations, videos, listen to music and sound files, transmit voice, and run programs from practically any software in the world, provided your computer has the necessary hardware and software.</li>
+  <li>Internet browsers enable you to connect to the Internet and access the vast storage of information on these interconnected computers. They offer features that make browsing the Internet easy and efficient.</li>
+</ul>
+<hr>
+<img src="https://i.ibb.co/BcgQVW7/tiny-business-people-with-digital-devices-big-globe-surfing-internet-internet-addiction-real-life-su.jpg" alt="Computer Image">
+<hr>
+<h2>World Wide Web</h2>
+<ul>
+  <li>The World Wide Web, abbreviated as WWW or W3 and commonly known as the Web, is a system of interlinked hypertext documents accessed via the Internet.</li>
+  <li>With a web browser, you can view web pages that may contain text, images, videos, and other multimedia, and navigate between them using hyperlinks.</li>
+  <li>The terms Internet and World Wide Web are often used interchangeably in everyday speech, but they are not the same thing. The Internet is a global system of interconnected computer networks, while the Web is one of the services that runs on the Internet.</li>
+  <li>The Web is a collection of interconnected documents and resources linked by hyperlinks and URLs, and it functions as an application running on the Internet.</li>
+</ul>
+
+""",
+  """
+<h2>Web Browsing Software's</h2>
+<p>A web page is an electronic document written in a computer language called HTML. Web pages can contain text, graphics, video, animation, sound, and interactive features. The first page is called the home page, acting as an index for the site, with hyperlinks to access other web pages.</p>
+<p>A browser is a computer program that resides on your computer, enabling you to view WWW documents and access the Internet with text formatting, hypertext links, images, sounds, and more. Netscape and Internet Explorer are leading graphical browsers, along with others like Mac web and Opera. They offer similar features and can retrieve documents and activate programs.</p>
+<p>When you log onto the Internet using Netscape or Microsoft's Internet Explorer or another browser, you are viewing documents on the World Wide Web. HTML and other programming embedded within HTML create buttons or icons using graphics that users can click to retrieve other documents. Each item on the Web has a unique address called a Uniform Resource Locator (URL).</p>
+<p>Browsers rely on "plug-ins" to handle special file types found on the Web. Plug-ins are sub-programs that support specific file types, and if your computer lacks the required plug-in for a file, you are prompted to install it. Most plug-ins are free and safe to install.</p>
+
+<h3>Popular Web Browsing Software's:</h3>
+
+<h4>Google Chrome <img src="https://i.ibb.co/xG5Y3jF/888846.jpg" alt="Computer Image" width="50" height="50"> </h4>
+    <p>Google Chrome enables you to connect to the Internet and access vast stores of information. You can subscribe to favorite sites for automatic updates and download updated web pages or entire sites in the background. Google Chrome features Auto Complete, which helps complete frequently used URLs in the address bar, and security features to protect against malicious websites. With Google Chrome, you can perform basic browsing, searching, view channels, and subscriptions.</p>
+
+    <h4>Microsoft Edge <img src="https://i.ibb.co/xjprsN3/Screenshot-2023-07-26-175653.png" alt="Computer Image" width="50" height="50"></h4>
+    <p>Microsoft Edge enables you to connect to the Internet and access vast stores of information. You can subscribe to favorite sites for automatic updates and download updated web pages or entire sites in the background. Microsoft Edge features Auto Complete, which helps complete frequently used URLs in the address bar, and security zones to set different security levels for various areas of the Web. With Microsoft Edge, you can perform basic browsing, searching, view channels, and subscriptions.</p>
+
+    <h4>Mozilla Firefox <img src="https://i.ibb.co/47q8d0f/183320.jpg" alt="Computer Image" width="50" height="50"></h4>
+    <p>Mozilla Firefox enables you to connect to the Internet and access vast stores of information. You can subscribe to favorite sites for automatic updates and download updated web pages or entire sites in the background. Mozilla Firefox features Auto Complete, which helps complete frequently used URLs in the address bar, and security features to protect against malicious websites. With Mozilla Firefox, you can perform basic browsing, searching, view channels, and subscriptions.</p>
+""",
+  """
+<h2>Search Engines and their Working</h2>
+<ul>
+  <li>Search engines are special websites designed to help people find information stored on other sites.</li>
+  <li>They perform three basic tasks:
+    <ul>
+      <li>Searching the web for select keywords.</li>
+      <li>Building an index of the words they find and their locations.</li>
+      <li>Facilitating users to look for those keywords or their combinations.</li>
+    </ul>
+  </li>
+  <li>The process involves software robots called spiders that crawl the web to build lists of words (crawling) and then index the words and URLs where they are found.</li>
+  <li>Search engines use different formulas to calculate rankings for the words based on their appearance in the page, titles, subtitles, or body text.</li>
+  <li>When users submit a query, the engine searches through the index and displays results based on the word's weight and relevance.</li>
+</ul>
+
+<h2>Popular Search Engines:</h2>
+<ol>
+  <li><strong>Google Search:</strong> Google uses multiple spiders and PageRank to find popular pages with high rankings. It gives weight to user preferences, providing relevant results based on their searches. Google continuously updates its search results and displays snippets of comprehensive text below each link for user hints.</li>
+  <li><strong>Yahoo! Search:</strong> Yahoo combines Alltheweb and AltaVista to offer specialized options like images and yellow page listings. It serves as an excellent shopping search engine and uses human-compiled results from its Yahoo directory.</li>
+  <li><strong>MSN/Windows Live Search:</strong> MSN search engine, now known as Live Search, provides access to specific types of information through search tabs. It has its own search engine to query results and updates its index weekly.</li>
+  <li><strong>AOL Search:</strong> AOL uses the Google search engine but offers unique internal links for AOL online users. It has a safe search filter to prevent unwanted adult images.</li>
+  <li><strong>Ask.com Search:</strong> Formerly known as Askjeeves.com, Ask.com started as a question-answering search engine and responds to natural language queries. Its ExpertRank algorithm delivers relevant results based on subject-specific sites.</li>
+</ol>
+
+<h2>Searching with Search Engines</h2>
+<ol>
+  <li>Open Internet Explorer and type the URL of the search engine website (e.g., www.google.com) in the address bar.</li>
+  <li>Type the desired topic in the search bar (e.g., "doeacc") and click on the search button.</li>
+  <li>The search engine will display relevant websites related to the topic, and you can click on any of them for more information.</li>
+</ol>
+
+""",
+  """
+ <h2>Accessing Chrome Web Browser</h1>
+  <ol>
+    <li>
+      <strong>Install Google Chrome:</strong>
+      <ul>
+        <li>
+    Go to the official Google Chrome website
+  </li>
+  <li>
+    Click on the "Download Chrome" button.
+  </li>
+  <li>
+    Double-click on the downloaded file to start the installation process.
+  </li>
+  <li>
+    Follow the on-screen instructions to complete the installation.
+  </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Launch Google Chrome:</strong>
+      <ul>
+        <li>Once Google Chrome is installed, you can launch it in several ways:</li>
+        <li>Click on the Start button in the taskbar, and search for "Chrome." Click on the "Google Chrome" app that appears in the search results.</li>
+        <li>You can also find the Chrome icon on your desktop if you chose to create a shortcut during installation. Double-click the icon to launch Chrome.</li>
+        <li>Another way is to click on the Start button and scroll through the list of installed apps until you find "Google Chrome," then click on it to launch.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Accessing Websites:</strong>
+      <ul>
+        <li>Once Google Chrome is open, you can start accessing websites by typing the URL (e.g., www.google.com) in the address bar at the top of the window and hitting Enter.</li>
+        <li>You can also use bookmarks, which are saved links to your favorite websites. To create a bookmark, visit a website, click on the star icon in the address bar, and select the "Add bookmark" option.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Tabs and Navigation:</strong>
+      <ul>
+        <li>Google Chrome supports multiple tabs, allowing you to open and switch between multiple websites simultaneously. To open a new tab, click on the plus (+) icon next to the existing tab.</li>
+        <li>You can navigate between pages using the back and forward buttons in the top-left corner of the window or by clicking on hyperlinks within web pages.</li>
+        <li>To close a tab, click on the close (X) icon on the tab.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Customization:</strong>
+      <ul>
+        <li>Google Chrome allows you to customize the appearance and behavior of the browser. You can change settings, add extensions, manage passwords, and more by clicking on the three-dot menu (⋮) in the top-right corner and selecting the appropriate option.</li>
+      </ul>
+    </li>
+  </ol>
+
+    <h2>Downloading Documents and Other Files - Chrome</h2>
+    <ol>
+        <li><strong>Open Google Chrome:</strong>
+            <ul>
+                <li>Click on the Start button in the taskbar to open the Start menu.</li>
+                <li>Look for the Google Chrome app icon in the Start menu and click on it to launch the browser.</li>
+            </ul>
+        </li>
+        <li><strong>Navigate to the Website:</strong>
+            <ul>
+                <li>In the address bar at the top of the Chrome window, type the URL of the website from which you want to download a file (e.g., www.example.com) and press Enter.</li>
+                <li>The website will load, and you can browse its content.</li>
+            </ul>
+        </li>
+        <li><strong>Find the File to Download:</strong>
+            <ul>
+                <li>Navigate through the website's pages and directories to locate the file you want to download.</li>
+                <li>You might find download links as buttons, images, or text links. Look for the appropriate link associated with the file you need.</li>
+            </ul>
+        </li>
+        <li><strong>Start the Download:</strong>
+            <ul>
+                <li>Once you find the download link, click on it to initiate the download.</li>
+                <li>A small pop-up window might appear, asking you to confirm the download. Click "Save" or "Download" to proceed.</li>
+            </ul>
+        </li>
+        <li><strong>Choose Download Location:</strong>
+            <ul>
+                <li>After clicking the download link, another pop-up window will appear, allowing you to choose the download location on your computer.</li>
+                <li>Select the folder or location where you want to save the downloaded file, then click "Save" to start the download.</li>
+            </ul>
+        </li>
+        <li><strong>Monitor Download Progress:</strong>
+            <ul>
+                <li>Chrome will display the download progress at the bottom of the browser window.</li>
+                <li>You can click on the download icon (a downward arrow) in the top-right corner to view and manage your downloads.</li>
+            </ul>
+        </li>
+        <li><strong>Access Downloaded Files:</strong>
+            <ul>
+                <li>Once the download is complete, you can access the downloaded file by clicking on the file name in the download bar or by going to the download location you specified earlier.</li>
+            </ul>
+        </li>
+        <li><strong>Downloads Folder:</strong>
+            <ul>
+                <li>By default, Chrome saves downloaded files in the "Downloads" folder on your computer. You can access this folder by clicking on the "Downloads" link in the left sidebar of the File Explorer.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Downloading and Printing Web Pages - Chrome</h2>
+    <ol>
+        <li><strong>Open Google Chrome:</strong>
+            <ul>
+                <li>Click on the Start button in the taskbar to open the Start menu.</li>
+                <li>Look for the Google Chrome app icon in the Start menu and click on it to launch the browser.</li>
+            </ul>
+        </li>
+        <li><strong>Navigate to the Web Page:</strong>
+            <ul>
+                <li>In the address bar at the top of the Chrome window, type the URL of the web page you want to download or print (e.g., www.example.com) and press Enter.</li>
+                <li>The web page will load, and you can view its content.</li>
+            </ul>
+        </li>
+        <li><strong>Downloading the Web Page:</strong>
+            <ul>
+                <li>To download the web page, click on the three-dot menu icon in the top-right corner of the Chrome window.</li>
+                <li>From the drop-down menu, select "More tools," and then choose "Save page as..."</li>
+                <li>Choose the folder or location where you want to save the web page on your computer, and click "Save."</li>
+                <li>The web page will be saved as an HTML file, along with a folder containing its associated files (images, CSS, etc.)</li>
+            </ul>
+        </li>
+        <li><strong>Printing the Web Page:</strong>
+            <ul>
+                <li>To print the web page, click on the three-dot menu icon in the top-right corner of the Chrome window.</li>
+                <li>From the drop-down menu, select "Print."</li>
+                <li>Alternatively, you can use the keyboard shortcut "Ctrl + P" (or "Cmd + P" on Mac) to open the Print dialog.</li>
+                <li>In the Print dialog, you can select the printer you want to use and adjust print settings, such as paper size, orientation, and number of copies.</li>
+                <li>Click "Print" to start printing the web page.</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
+
+""",
+  """
+<h2>Understanding URL</h2>
+    <p>Every Web page has a unique address called a URL (Uniform Resource Locator) which identifies where it is located on the Web.</p>
+    <p>The URL consists of three basic parts:</p>
+    <ol>
+        <li><strong>Protocol:</strong> The protocol identifies the method (set of rules) by which the resource is transmitted. All Web pages use Hypertext Transfer Protocol (HTTP). Thus, all web URLs begin with http://.</li>
+        <li><strong>Server Name:</strong> The server name identifies the computer on which the resource is found. It commonly identifies the company, agency, or organization responsible for the information. The server name ends with a dot and a domain name, which indicates the type of organization or country where the server is located.</li>
+        <li><strong>Resource ID:</strong> The resource ID is the name of the file for the page and any directories or subdirectories under which it is stored on the specified computer. It includes the file name and ends with a file type designation that specifies the file type, such as .htm or .html for a standard web page, .jpg or .gif for common graphic files.</li>
+    </ol>
+    <p>Let's examine each part of an example URL:</p>
+    <p>URL: <code>http://www.mycomputercourse.edu/accounts/course/index.htm</code></p>
+    <ul>
+        <li>Protocol: <code>http://</code></li>
+        <li>Server Name: <code>www.mycomputercourse.com</code></li>
+        <li>Resource ID: <code>/accounts/course/index.htm</code></li>
+    </ul>
+    <p>The server name identifies mycomputercourse server, and the resource ID specifies the homepage of the mycomputercourse website.</p>
+""",
+  """
+<h2>Surfing the Web</h2>
+    <h3>Accessing through Internet Explorer</h3>
+    <p>Here we are using Microsoft Internet Explorer to access the World Wide Web and showing you the screenshots. Follow the given steps to use this client-based software.</p>
+    <ol>
+        <li>Double-click on the Chrome icon on the Desktop</li>
+        <li>This invokes the Chrome screen which contains the URL in the Address Bar and the Home Page of a given website. The process for settings this screen is given below.</li>
+        <li>If you want to make the current website your Home Page, click on <strong>Tools</strong> &rarr; <strong>Internet Options</strong>. The screen will appear as shown in the figure.</li>
+        <li>To access a desired website, type the URL (name of the website, e.g. www.doeaccchennai.edu.in) of the site in the Address bar.</li>
+    </ol>
+
+    <h3>Using e-Governance Website</h3>
+    <p>e-Government (short for electronic government, also known as e-gov, digital government, online government, or connected government) is digital interaction between a government and citizens (G2C), government and businesses/commerce/eCommerce (G2B), and between government agencies (G2G), Government-to-Religious Movements/Church (G2R), Government-to-Households (G2H). This digital interaction consists of governance, information and communication technology (ICT), business process re-engineering (BPR), and e-citizen at all levels of government (city, state/province, national, and international).</p>
+    <p>The National e-Governance Plan of the Indian Government seeks to lay the foundation and provide the impetus for long-term growth of e-Governance within the country. The plan seeks to create the right governance and institutional mechanisms, set up the core infrastructure and policies, and implement a number of Mission Mode Projects at the center, state, and integrated service levels to create a citizen-centric and business-centric environment for governance.</p>
 """,
 ];

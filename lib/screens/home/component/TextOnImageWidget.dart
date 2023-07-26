@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
 class TextOnImageWidget extends StatelessWidget {
-  const TextOnImageWidget({super.key, required this.text, required this.image});
+  const TextOnImageWidget(
+      {super.key,
+      required this.text,
+      required this.image,
+      required this.callback});
   final String image;
   final String text;
+  final VoidCallback callback;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: callback,
       child: SizedBox(
           height: 90,
           width: 130,

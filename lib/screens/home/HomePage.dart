@@ -87,23 +87,47 @@ class HomePage extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(children: [
-                  const TextOnImageWidget(
-                      text: "network", image: "assets/image4.png"),
+                  TextOnImageWidget(
+                      text: "network",
+                      image: "assets/image4.png",
+                      callback: () {
+                        Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                            arguments: ChooseSubTopicScreenArgs(
+                                "Introduction", "", 2));
+                      }),
                   Container(
                     width: 16,
                   ),
-                  const TextOnImageWidget(
-                      text: "network", image: "assets/image4.png"),
+                  TextOnImageWidget(
+                      text: "network",
+                      image: "assets/image4.png",
+                      callback: () {
+                        Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                            arguments: ChooseSubTopicScreenArgs(
+                                "Introduction", "", 3));
+                      }),
                   Container(
                     width: 16,
                   ),
-                  const TextOnImageWidget(
-                      text: "network", image: "assets/image4.png"),
+                  TextOnImageWidget(
+                      text: "network",
+                      image: "assets/image4.png",
+                      callback: () {
+                        Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                            arguments: ChooseSubTopicScreenArgs(
+                                "Introduction", "", 1));
+                      }),
                   Container(
                     width: 16,
                   ),
-                  const TextOnImageWidget(
-                      text: "network", image: "assets/image4.png"),
+                  TextOnImageWidget(
+                      text: "network",
+                      image: "assets/image4.png",
+                      callback: () {
+                        Navigator.pushNamed(context, ChooseSubTopicScreen.route,
+                            arguments: ChooseSubTopicScreenArgs(
+                                "Introduction", "", 1));
+                      }),
                   Container(
                     width: 16,
                   ),
